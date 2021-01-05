@@ -43,4 +43,8 @@ testem.log
 
 # System Files
 .DS_Store
+<<<<<<< HEAD
 Thumbs.db
+=======
+Thumbs.db
+>>>>>>> auth
