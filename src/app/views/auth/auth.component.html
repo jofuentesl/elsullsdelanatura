@@ -1,2 +1,28 @@
-<p>auth works!</p>
-    
+
+<div>
+    <form #authForm = "ngForm" (ngSubmit)="onSubmit(authForm">
+        <div>
+            <input
+                type="email"
+                id="email"
+                ngModel
+                name="email"
+                required
+            />
+        </div>
+        <div>
+            <input
+                type="password"
+                id="password"
+                ngModel
+                name="password"
+                required
+                minlength="6"
+            />
+        </div>
+        <div>
+            <button>Register</button>
+        </div>
+    </form>
+</div>
+>>>>>>> auth
