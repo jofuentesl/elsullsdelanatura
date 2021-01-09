@@ -14,6 +14,7 @@ export class AuthComponent implements OnInit {
   constructor( public authService: AuthService ) { }
 
   onSubmit(form: NgForm) {
+    console.log(form.value);
     const email = form.value.email;
     const password = form.value.password;
     this.authService.onRegister(email, password);
