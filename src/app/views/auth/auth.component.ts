@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { NgForm } from '@angular/forms';
+=======
+import { AuthService } from '@services/auth.service'
+>>>>>>> auth
 
 @Component({
   selector: 'app-auth',
@@ -9,7 +13,7 @@ import { NgForm } from '@angular/forms';
 })
 export class AuthComponent implements OnInit {
 
-  constructor() { }
+  constructor( public AuthService: AuthService) { }
 
   onSubmit(form: NgForm) {
     console.log(form.value);

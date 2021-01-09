@@ -17,10 +17,10 @@
       "dom"
     ], 
     "paths": {
-      "@shared/*": ["app/shared/*"],
-      "@services/*": ["app/shared/services/*"],
-      "@views/*": ["app/views/*"],
-      "@models/*": ["app/shared/interfaces/*"]
+      "@shared/*": ["src/app/shared/*"],
+      "@services/*": ["src/app/shared/services/*"],
+      "@views/*": ["src/app/views/*"],
+      "@models/*": ["src/app/shared/interfaces/*"]
     }
   }
 }
