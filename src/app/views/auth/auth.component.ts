@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
+
 import { NgForm } from '@angular/forms';
-=======
 import { AuthService } from '@services/auth.service'
->>>>>>> auth
+
+
+
+
 
 @Component({
   selector: 'app-auth',
@@ -13,12 +15,15 @@ import { AuthService } from '@services/auth.service'
 })
 export class AuthComponent implements OnInit {
 
-  constructor( public AuthService: AuthService) { }
+  constructor( public authService: AuthService ) { }
 
   onSubmit(form: NgForm) {
-    console.log(form.value);
+    const email = form.value.email;
+    const password = form.value.password;
+    this.authService.onRegister(email, password);
     form.reset();
   }
+
 
   ngOnInit(): void {
   }
